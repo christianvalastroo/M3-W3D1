@@ -10,6 +10,10 @@
   --dot-lg: 14px;
 
   --radius-menu: 16px;
+
+  --purple: #754ffe;
+  --green: #22c55e;
+
 }
 /* Cerchio campanella */
 .nav-circle{
@@ -67,4 +71,20 @@
   width: 360px;
   border-radius: var(--radius-menu);
   overflow: hidden;
+}
+
+.bg-purple{ background: var(--purple); }
+
+.btn-green{
+  background: var(--green);
+}
+.btn-green:hover{
+  background: var(--green);
+  opacity: .95;
+}
+
+/* opzionale: se vuoi un po’ di aria sopra/sotto */
+.hero{
+  padding-top: 12px;
+  padding-bottom: 12px;
 }
