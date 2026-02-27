@@ -1,0 +1,70 @@
+:root{
+  --purple: #754ffe;
+  --green: #22c55e;
+
+  --nav-circle: 44px;
+  --avatar: 44px;
+  --avatar-lg: 56px;
+
+  --dot: 10px;
+  --dot-lg: 14px;
+
+  --radius-menu: 16px;
+}
+/* Cerchio campanella */
+.nav-circle{
+  width: var(--nav-circle);
+  height: var(--nav-circle);
+  border-radius: 50%;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+/* Avatar */
+.avatar-img{
+  width: var(--avatar);
+  height: var(--avatar);
+  border-radius: 50%;
+  object-fit: cover;
+}
+.avatar-img-lg{
+  width: var(--avatar-lg);
+  height: var(--avatar-lg);
+}
+
+/* Dots */
+.dot{
+  position: absolute;
+  width: var(--dot);
+  height: var(--dot);
+  border-radius: 50%;
+}
+
+.dot-purple{
+  background: var(--purple);
+  top: 8px;
+  right: 8px;
+}
+
+.dot-green{
+  background: var(--green);
+  border: 2px solid #fff;
+}
+
+.dot-bottom-right{
+  right: 2px;
+  bottom: 2px;
+}
+
+.dot-lg{
+  width: var(--dot-lg);
+  height: var(--dot-lg);
+  right: 4px;
+  bottom: 4px;
+}
+/* Dropdown profilo */
+.profile-menu{
+  width: 360px;
+  border-radius: var(--radius-menu);
+  overflow: hidden;
+}

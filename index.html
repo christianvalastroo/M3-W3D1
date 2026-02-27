@@ -22,7 +22,109 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    
+    <nav class="navbar navbar-light bg-white py-2 px-3">
 
+    <!-- Logo -->
+  <a class="navbar-brand" href="#">
+    <img src="assets/logo.svg" alt="logo" height="28">
+  </a>
+  <ul class="navbar-nav flex-row ms-4 align-items-center">
+    <li class="nav-item dropdown me-3">
+      <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+        Browse
+      </a>
+
+      <!-- Menu di navigazione -->
+      <ul class="dropdown-menu border-0 shadow-lg px-3">
+        <li><h6 class="dropdown-header">Title</h6></li>
+        <li><a class="dropdown-item" href="#">Action</a></li>
+        <li><a class="dropdown-item" href="#">Another action</a></li>
+        <li><hr class="dropdown-divider"></li>
+        <li><a class="dropdown-item" href="#">Something else here</a></li>
+      </ul>
+    </li>
+
+    <li class="nav-item dropdown me-3">
+      <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+        Landings
+      </a>
+      <ul class="dropdown-menu border-0 shadow-lg px-3">
+        <li><h6 class="dropdown-header">Title</h6></li>
+        <li><a class="dropdown-item" href="#">Action</a></li>
+        <li><a class="dropdown-item" href="#">Another action</a></li>
+      </ul>
+    </li>
+
+    <li class="nav-item dropdown me-3">
+      <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+        Pages
+      </a>
+      <ul class="dropdown-menu border-0 shadow-lg px-3">
+        <li><h6 class="dropdown-header">Title</h6></li>
+        <li><a class="dropdown-item" href="#">Action</a></li>
+      </ul>
+    </li>
+
+    <li class="nav-item dropdown">
+      <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+        Accounts
+      </a>
+      <ul class="dropdown-menu border-0 shadow-lg px-3">
+        <li><h6 class="dropdown-header">Title</h6></li>
+        <li><a class="dropdown-item" href="#">Action</a></li>
+      </ul>
+    </li>
+  </ul>
+
+  <!-- Blocco Destra -->
+  <div class="d-flex align-items-center ms-auto">
+       <button class="nav-circle bg-light me-3 border-0 position-relative">
+        <i class="bi bi-bell"></i>
+        <span class="dot dot-purple dot-top-right"></span>
+      </button>
+    <div class="dropdown">
+      <button class="btn p-0 border-0 bg-transparent position-relative"
+              type="button"
+              data-bs-toggle="dropdown"
+              aria-expanded="false">
+        <img src="assets/avatar-1.jpg" alt="avatar" class="avatar-img">
+        <span class="dot dot-green dot-bottom-right"></span>
+      </button>
+
+      <div class="dropdown-menu dropdown-menu-end p-0 shadow-lg border-0 profile-menu">
+        <div class="p-3 d-flex align-items-center gap-3">
+          <div class="position-relative">
+            <img src="assets/avatar-1.jpg" alt="avatar" class="avatar-img avatar-img-lg">
+            <span class="dot dot-green dot-bottom-right dot-lg"></span>
+          </div>
+          <div>
+            <div class="fw-semibold fs-5">Annette Black</div>
+            <div class="text-secondary">annette@geeksui.com</div>
+          </div>
+        </div>
+        <div class="dropdown-divider m-0"></div>
+        <a class="dropdown-item py-3 d-flex align-items-center gap-3" href="#">
+          <i class="bi bi-person fs-5"></i>
+          <span>Profile</span>
+        </a>
+        <a class="dropdown-item py-3 d-flex align-items-center gap-3" href="#">
+          <i class="bi bi-star fs-5"></i>
+          <span>Subscription</span>
+        </a>
+        <a class="dropdown-item py-3 d-flex align-items-center gap-3" href="#">
+          <i class="bi bi-gear fs-5"></i>
+          <span>Settings</span>
+        </a>
+        <div class="dropdown-divider m-0"></div>
+        <a class="dropdown-item py-3 d-flex align-items-center gap-3" href="#">
+          <i class="bi bi-power fs-5"></i>
+          <span>Sign Out</span>
+        </a>
+      </div>
+    </div>
+  </div>
+</nav>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
           integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
           crossorigin="anonymous"></script>
