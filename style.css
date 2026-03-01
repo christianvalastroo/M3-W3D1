@@ -151,3 +151,11 @@ body{
 .container{
   overflow: visible;
 }
+
+footer .nav-link{
+  text-decoration: none;
+}
+
+footer .nav-link:hover{
+  color: #000 !important;
+}
