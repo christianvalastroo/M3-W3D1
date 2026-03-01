@@ -14,7 +14,6 @@
   <!-- Bootstrap Icons -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
 
-
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
@@ -22,605 +21,1076 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    
-    <nav class="navbar navbar-light bg-white py-2 px-3">
+
+  <nav class="navbar navbar-light bg-white py-2 px-3">
 
     <!-- Logo -->
-  <a class="navbar-brand" href="#">
-    <img src="assets/logo.svg" alt="logo" height="28">
-  </a>
-  <ul class="navbar-nav flex-row ms-4 align-items-center">
-    <li class="nav-item dropdown me-3">
-      <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-        Browse
-      </a>
+    <a class="navbar-brand" href="#">
+      <img src="assets/logo.svg" alt="logo" height="28">
+    </a>
 
-      <!-- Menu di navigazione -->
-      <ul class="dropdown-menu border-0 shadow-lg px-3">
-        <li><h6 class="dropdown-header">Title</h6></li>
-        <li><a class="dropdown-item" href="#">Action</a></li>
-        <li><a class="dropdown-item" href="#">Another action</a></li>
-        <li><hr class="dropdown-divider"></li>
-        <li><a class="dropdown-item" href="#">Something else here</a></li>
-      </ul>
-    </li>
+    <ul class="navbar-nav flex-row ms-4 align-items-center">
+      <li class="nav-item dropdown me-3">
+        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+          Browse
+        </a>
+        <ul class="dropdown-menu border-0 shadow-lg px-3">
+          <li><h6 class="dropdown-header">Title</h6></li>
+          <li><a class="dropdown-item" href="#">Action</a></li>
+          <li><a class="dropdown-item" href="#">Another action</a></li>
+          <li><hr class="dropdown-divider"></li>
+          <li><a class="dropdown-item" href="#">Something else here</a></li>
+        </ul>
+      </li>
 
-    <li class="nav-item dropdown me-3">
-      <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-        Landings
-      </a>
-      <ul class="dropdown-menu border-0 shadow-lg px-3">
-        <li><h6 class="dropdown-header">Title</h6></li>
-        <li><a class="dropdown-item" href="#">Action</a></li>
-        <li><a class="dropdown-item" href="#">Another action</a></li>
-      </ul>
-    </li>
+      <li class="nav-item dropdown me-3">
+        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+          Landings
+        </a>
+        <ul class="dropdown-menu border-0 shadow-lg px-3">
+          <li><h6 class="dropdown-header">Title</h6></li>
+          <li><a class="dropdown-item" href="#">Action</a></li>
+          <li><a class="dropdown-item" href="#">Another action</a></li>
+        </ul>
+      </li>
 
-    <li class="nav-item dropdown me-3">
-      <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-        Pages
-      </a>
-      <ul class="dropdown-menu border-0 shadow-lg px-3">
-        <li><h6 class="dropdown-header">Title</h6></li>
-        <li><a class="dropdown-item" href="#">Action</a></li>
-      </ul>
-    </li>
+      <li class="nav-item dropdown me-3">
+        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+          Pages
+        </a>
+        <ul class="dropdown-menu border-0 shadow-lg px-3">
+          <li><h6 class="dropdown-header">Title</h6></li>
+          <li><a class="dropdown-item" href="#">Action</a></li>
+        </ul>
+      </li>
 
-    <li class="nav-item dropdown">
-      <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-        Accounts
-      </a>
-      <ul class="dropdown-menu border-0 shadow-lg px-3">
-        <li><h6 class="dropdown-header">Title</h6></li>
-        <li><a class="dropdown-item" href="#">Action</a></li>
-      </ul>
-    </li>
-  </ul>
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+          Accounts
+        </a>
+        <ul class="dropdown-menu border-0 shadow-lg px-3">
+          <li><h6 class="dropdown-header">Title</h6></li>
+          <li><a class="dropdown-item" href="#">Action</a></li>
+        </ul>
+      </li>
+    </ul>
 
-  <!-- Blocco Destra -->
-  <div class="d-flex align-items-center ms-auto">
-       <button class="nav-circle bg-light me-3 border-0 position-relative">
+    <!-- Blocco Destra -->
+    <div class="d-flex align-items-center ms-auto">
+      <button class="nav-circle bg-light me-3 border-0 position-relative">
         <i class="bi bi-bell"></i>
         <span class="dot dot-purple dot-top-right"></span>
       </button>
-    <div class="dropdown">
-      <button class="btn p-0 border-0 bg-transparent position-relative"
-              type="button"
-              data-bs-toggle="dropdown"
-              aria-expanded="false">
-        <img src="assets/avatar-1.jpg" alt="avatar" class="avatar-img">
-        <span class="dot dot-green dot-bottom-right"></span>
-      </button>
 
-      <div class="dropdown-menu dropdown-menu-end p-0 shadow-lg border-0 profile-menu">
-        <div class="p-3 d-flex align-items-center gap-3">
-          <div class="position-relative">
-            <img src="assets/avatar-1.jpg" alt="avatar" class="avatar-img avatar-img-lg">
-            <span class="dot dot-green dot-bottom-right dot-lg"></span>
+      <div class="dropdown">
+        <button class="btn p-0 border-0 bg-transparent position-relative"
+                type="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false">
+          <img src="assets/avatar-1.jpg" alt="avatar" class="avatar-img">
+          <span class="dot dot-green dot-bottom-right"></span>
+        </button>
+
+        <div class="dropdown-menu dropdown-menu-end p-0 shadow-lg border-0 profile-menu">
+          <div class="p-3 d-flex align-items-center gap-3">
+            <div class="position-relative">
+              <img src="assets/avatar-1.jpg" alt="avatar" class="avatar-img avatar-img-lg">
+              <span class="dot dot-green dot-bottom-right dot-lg"></span>
+            </div>
+            <div>
+              <div class="fw-semibold fs-5">Annette Black</div>
+              <div class="text-secondary">annette@geeksui.com</div>
+            </div>
+          </div>
+          <div class="dropdown-divider m-0"></div>
+          <a class="dropdown-item py-3 d-flex align-items-center gap-3" href="#">
+            <i class="bi bi-person fs-5"></i>
+            <span>Profile</span>
+          </a>
+          <a class="dropdown-item py-3 d-flex align-items-center gap-3" href="#">
+            <i class="bi bi-star fs-5"></i>
+            <span>Subscription</span>
+          </a>
+          <a class="dropdown-item py-3 d-flex align-items-center gap-3" href="#">
+            <i class="bi bi-gear fs-5"></i>
+            <span>Settings</span>
+          </a>
+          <div class="dropdown-divider m-0"></div>
+          <a class="dropdown-item py-3 d-flex align-items-center gap-3" href="#">
+            <i class="bi bi-power fs-5"></i>
+            <span>Sign Out</span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <header class="hero bg-purple">
+    <div class="container">
+      <div class="row g-0">
+
+        <!-- Testo -->
+        <div class="col-md-6 col-lg-5 d-flex py-4">
+          <div class="my-auto">
+            <h1 class="text-white fw-bold">Welcome Dev Students!</h1>
+            <p class="text-white opacity-50">
+              Hand-picked Instructor and expertly crafted courses, designed
+              for the modern students and entrepreneur.
+            </p>
+
+            <button class="btn btn-green text-white mb-1 mb-sm-0 me-2">
+              Browse Courses
+            </button>
+            <button class="btn btn-light mb-1 mb-sm-0">
+              Are You Instructor?
+            </button>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-lg-6 offset-lg-1 text-center d-flex align-items-end">
+          <img src="assets/hero-img.png" alt="hero image" class="img-fluid">
+        </div>
+
+      </div>
+    </div>
+  </header>
+
+  <section class="details bg-with py-3">
+    <div class="container">
+      <div class="row text-center text-md-start">
+        <div class="col-md-4 d-flex align-items-center mb-3 mb-md-0">
+          <div class="me-3 fs-3 text-primary">
+            <i class="bi bi-camera-video"></i>
           </div>
           <div>
-            <div class="fw-semibold fs-5">Annette Black</div>
-            <div class="text-secondary">annette@geeksui.com</div>
+            <h6 class="mb-0 fw-semibold">30,000 online courses</h6>
+            <p class="mb-0 text-muted small">Enjoy a variety of fresh topics</p>
           </div>
         </div>
-        <div class="dropdown-divider m-0"></div>
-        <a class="dropdown-item py-3 d-flex align-items-center gap-3" href="#">
-          <i class="bi bi-person fs-5"></i>
-          <span>Profile</span>
-        </a>
-        <a class="dropdown-item py-3 d-flex align-items-center gap-3" href="#">
-          <i class="bi bi-star fs-5"></i>
-          <span>Subscription</span>
-        </a>
-        <a class="dropdown-item py-3 d-flex align-items-center gap-3" href="#">
-          <i class="bi bi-gear fs-5"></i>
-          <span>Settings</span>
-        </a>
-        <div class="dropdown-divider m-0"></div>
-        <a class="dropdown-item py-3 d-flex align-items-center gap-3" href="#">
-          <i class="bi bi-power fs-5"></i>
-          <span>Sign Out</span>
-        </a>
+        <div class="col-md-4 d-flex align-items-center mb-3 mb-md-0">
+          <div class="me-3 fs-3 text-primary">
+            <i class="bi bi-people"></i>
+          </div>
+          <div>
+            <h6 class="mb-0 fw-semibold">Expert instruction</h6>
+            <p class="mb-0 text-muted small">Find the right instructor for you</p>
+          </div>
+        </div>
+        <div class="col-md-4 d-flex align-items-center">
+          <div class="me-3 fs-3 text-primary">
+            <i class="bi bi-clock"></i>
+          </div>
+          <div>
+            <h6 class="mb-0 fw-semibold">Lifetime access</h6>
+            <p class="mb-0 text-muted small">Learn on your schedule</p>
+          </div>
+        </div>
+
       </div>
     </div>
-  </div>
-</nav>
+  </section>
 
-<!-- HERO -->
-<header class="hero bg-purple">
-  <div class="container">
-    <div class="row g-0">
+  <!-- CARDS SECTIONS -->
 
-      <!-- Testo -->
-      <div class="col-md-6 col-lg-5 d-flex py-4">
-        <div class="my-auto">
-          <h1 class="text-white fw-bold">Welcome Dev Students!</h1>
-          <p class="text-white opacity-50">
-            Hand-picked Instructor and expertly crafted courses, designed
-            for the modern students and entrepreneur.
-          </p>
+  <section class="py-5">
+    <div class="container px-5 px-xl-3">
 
-          <button class="btn btn-green text-white mb-1 mb-sm-0 me-2">
-            Browse Courses
+      <!-- Recommended to you -->
+
+      <h2 class="mb-4">Recommended to you</h2>
+
+      <!-- MOBILE: Carousel -->
+      <div class="d-md-none mb-4">
+        <div id="recCarousel" class="carousel slide" data-bs-ride="carousel">
+          <div class="carousel-inner">
+
+            <div class="carousel-item active">
+              <article class="card border-0 rounded-4 shadow-sm">
+                <img src="assets/course-graphql.jpg" class="card-img-top" alt="graphql">
+                <div class="card-body">
+                  <h3 class="h6 fw-semibold">GraphQL: introduction to graphQL for beginners</h3>
+
+                  <div class="d-flex flex-wrap gap-3 text-secondary small mt-2">
+                    <span><i class="bi bi-clock me-1"></i>2h 40m</span>
+                    <span><i class="bi bi-bar-chart me-1"></i>Advance</span>
+                  </div>
+
+                  <div class="d-flex align-items-center flex-wrap gap-2 mt-3">
+                    <div class="stars" aria-label="2.5 su 5">
+                      <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-half"></i><i class="bi bi-star"></i><i class="bi bi-star"></i>
+                    </div>
+                    <span class="small text-secondary">2.5</span>
+                    <span class="small text-secondary">(1,500)</span>
+                  </div>
+
+                  <div class="mt-3 small">
+                    <span class="fw-bold">$500</span>
+                    <del class="text-secondary ms-2">$600</del>
+                  </div>
+                </div>
+
+                <div class="card-footer bg-white border-0 pt-0">
+                  <div class="d-flex align-items-center gap-2">
+                    <img src="assets/avatar-5.jpg" class="rounded-circle" width="30" height="30" alt="Brooklyn">
+                    <span class="small">Brooklyn Simmons</span>
+                    <i class="bi bi-bookmark ms-auto text-secondary"></i>
+                  </div>
+                </div>
+              </article>
+            </div>
+
+            <div class="carousel-item">
+              <article class="card border-0 rounded-4 shadow-sm">
+                <img src="assets/course-javascript.jpg" class="card-img-top" alt="javascript">
+                <div class="card-body">
+                  <h3 class="h6 fw-semibold">A Complete Beginner’s Guide to JavaScript</h3>
+
+                  <div class="d-flex flex-wrap gap-3 text-secondary small mt-2">
+                    <span><i class="bi bi-clock me-1"></i>4h 10m</span>
+                    <span><i class="bi bi-bar-chart me-1"></i>Advance</span>
+                  </div>
+
+                  <div class="d-flex align-items-center flex-wrap gap-2 mt-3">
+                    <div class="stars" aria-label="3.5 su 5">
+                      <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-half"></i><i class="bi bi-star"></i>
+                    </div>
+                    <span class="small text-secondary">3.5</span>
+                    <span class="small text-secondary">(7,500)</span>
+                  </div>
+
+                  <div class="mt-3 small">
+                    <span class="fw-bold">$700</span>
+                    <del class="text-secondary ms-2">$850</del>
+                  </div>
+                </div>
+
+                <div class="card-footer bg-white border-0 pt-0">
+                  <div class="d-flex align-items-center gap-2">
+                    <img src="assets/avatar-1.jpg" class="rounded-circle" width="30" height="30" alt="Jenny">
+                    <span class="small">Jenny Wilson</span>
+                    <i class="bi bi-bookmark ms-auto text-secondary"></i>
+                  </div>
+                </div>
+              </article>
+            </div>
+
+            <div class="carousel-item">
+              <article class="card border-0 rounded-4 shadow-sm">
+                <img src="assets/course-node.jpg" class="card-img-top" alt="node">
+                <div class="card-body">
+                  <h3 class="h6 fw-semibold">Node.js: The Complete Guide</h3>
+
+                  <div class="d-flex flex-wrap gap-3 text-secondary small mt-2">
+                    <span><i class="bi bi-clock me-1"></i>2h 00m</span>
+                    <span><i class="bi bi-bar-chart me-1"></i>Intermediate</span>
+                  </div>
+
+                  <div class="d-flex align-items-center flex-wrap gap-2 mt-3">
+                    <div class="stars" aria-label="4.0 su 5">
+                      <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star"></i>
+                    </div>
+                    <span class="small text-secondary">4.0</span>
+                    <span class="small text-secondary">(15,700)</span>
+                  </div>
+
+                  <div class="mt-3 small">
+                    <span class="fw-bold">$800</span>
+                    <del class="text-secondary ms-2">$950</del>
+                  </div>
+                </div>
+
+                <div class="card-footer bg-white border-0 pt-0">
+                  <div class="d-flex align-items-center gap-2">
+                    <img src="assets/avatar-3.jpg" class="rounded-circle" width="30" height="30" alt="Sina">
+                    <span class="small">Sina Ray</span>
+                    <i class="bi bi-bookmark ms-auto text-secondary"></i>
+                  </div>
+                </div>
+              </article>
+            </div>
+
+            <div class="carousel-item">
+              <article class="card border-0 rounded-4 shadow-sm">
+                <img src="assets/course-laravel.jpg" class="card-img-top" alt="laravel">
+                <div class="card-body">
+                  <h3 class="h6 fw-semibold">Laravel: Ultimate Beginner’s Guide</h3>
+
+                  <div class="d-flex flex-wrap gap-3 text-secondary small mt-2">
+                    <span><i class="bi bi-clock me-1"></i>1h 00m</span>
+                    <span><i class="bi bi-bar-chart me-1"></i>Beginner</span>
+                  </div>
+
+                  <div class="d-flex align-items-center flex-wrap gap-2 mt-3">
+                    <div class="stars" aria-label="4.5 su 5">
+                      <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-half"></i>
+                    </div>
+                    <span class="small text-secondary">4.5</span>
+                    <span class="small text-secondary">(2,500)</span>
+                  </div>
+
+                  <div class="mt-3 small">
+                    <span class="fw-bold">$170</span>
+                    <del class="text-secondary ms-2">$220</del>
+                  </div>
+                </div>
+
+                <div class="card-footer bg-white border-0 pt-0">
+                  <div class="d-flex align-items-center gap-2">
+                    <img src="assets/avatar-7.jpg" class="rounded-circle" width="30" height="30" alt="Sobo">
+                    <span class="small">Sobo Rikhan</span>
+                    <i class="bi bi-bookmark ms-auto text-secondary"></i>
+                  </div>
+                </div>
+              </article>
+            </div>
+
+          </div>
+
+          <button class="carousel-control-prev" type="button" data-bs-target="#recCarousel" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
           </button>
-          <button class="btn btn-light mb-1 mb-sm-0">
-            Are You Instructor?
+          <button class="carousel-control-next" type="button" data-bs-target="#recCarousel" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
           </button>
         </div>
       </div>
 
-      <div class="col-md-6 col-lg-6 offset-lg-1 text-center d-flex align-items-end">
-        <img src="assets/hero-img.png" alt="hero image" class="img-fluid">
+      <!-- DESKTOP/TABLET: Grid -->
+      <div class="row d-none d-md-flex row-cols-md-3 row-cols-lg-4 g-4 mb-5 position-relative">
+
+        <div class="col">
+          <article class="card border-0 rounded-4 shadow-sm h-100">
+            <img src="assets/course-graphql.jpg" class="card-img-top" alt="graphql">
+            <div class="card-body">
+              <h3 class="h6 fw-semibold">GraphQL: introduction to graphQL for beginners</h3>
+
+              <div class="d-flex flex-wrap gap-3 text-secondary small mt-2">
+                <span><i class="bi bi-clock me-1"></i>2h 40m</span>
+                <span><i class="bi bi-bar-chart me-1"></i>Advance</span>
+              </div>
+
+              <div class="d-flex align-items-center flex-wrap gap-2 mt-3">
+                <div class="stars" aria-label="2.5 su 5">
+                  <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-half"></i><i class="bi bi-star"></i><i class="bi bi-star"></i>
+                </div>
+                <span class="small text-secondary">2.5</span>
+                <span class="small text-secondary">(1,500)</span>
+              </div>
+
+              <div class="mt-3 small">
+                <span class="fw-bold">$500</span>
+                <del class="text-secondary ms-2">$600</del>
+              </div>
+            </div>
+
+            <div class="card-footer bg-white border-0 pt-0">
+              <div class="d-flex align-items-center gap-2">
+                <img src="assets/avatar-5.jpg" class="rounded-circle" width="30" height="30" alt="Brooklyn">
+                <span class="small">Brooklyn Simmons</span>
+                <i class="bi bi-bookmark ms-auto text-secondary"></i>
+              </div>
+            </div>
+          </article>
+        </div>
+
+        <div class="col">
+          <article class="card border-0 rounded-4 shadow-sm h-100">
+            <img src="assets/course-javascript.jpg" class="card-img-top" alt="javascript">
+            <div class="card-body">
+              <h3 class="h6 fw-semibold">A Complete Beginner’s Guide to JavaScript</h3>
+
+              <div class="d-flex flex-wrap gap-3 text-secondary small mt-2">
+                <span><i class="bi bi-clock me-1"></i>4h 10m</span>
+                <span><i class="bi bi-bar-chart me-1"></i>Advance</span>
+              </div>
+
+              <div class="d-flex align-items-center flex-wrap gap-2 mt-3">
+                <div class="stars" aria-label="3.5 su 5">
+                  <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-half"></i><i class="bi bi-star"></i>
+                </div>
+                <span class="small text-secondary">3.5</span>
+                <span class="small text-secondary">(7,500)</span>
+              </div>
+
+              <div class="mt-3 small">
+                <span class="fw-bold">$700</span>
+                <del class="text-secondary ms-2">$850</del>
+              </div>
+            </div>
+
+            <div class="card-footer bg-white border-0 pt-0">
+              <div class="d-flex align-items-center gap-2">
+                <img src="assets/avatar-1.jpg" class="rounded-circle" width="30" height="30" alt="Jenny">
+                <span class="small">Jenny Wilson</span>
+                <i class="bi bi-bookmark ms-auto text-secondary"></i>
+              </div>
+            </div>
+          </article>
+        </div>
+
+        <div class="col">
+          <article class="card border-0 rounded-4 shadow-sm h-100">
+            <img src="assets/course-node.jpg" class="card-img-top" alt="node">
+            <div class="card-body">
+              <h3 class="h6 fw-semibold">Node.js: The Complete Guide</h3>
+
+              <div class="d-flex flex-wrap gap-3 text-secondary small mt-2">
+                <span><i class="bi bi-clock me-1"></i>2h 00m</span>
+                <span><i class="bi bi-bar-chart me-1"></i>Intermediate</span>
+              </div>
+
+              <div class="d-flex align-items-center flex-wrap gap-2 mt-3">
+                <div class="stars" aria-label="4.0 su 5">
+                  <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star"></i>
+                </div>
+                <span class="small text-secondary">4.0</span>
+                <span class="small text-secondary">(15,700)</span>
+              </div>
+
+              <div class="mt-3 small">
+                <span class="fw-bold">$800</span>
+                <del class="text-secondary ms-2">$950</del>
+              </div>
+            </div>
+
+            <div class="card-footer bg-white border-0 pt-0">
+              <div class="d-flex align-items-center gap-2">
+                <img src="assets/avatar-3.jpg" class="rounded-circle" width="30" height="30" alt="Sina">
+                <span class="small">Sina Ray</span>
+                <i class="bi bi-bookmark ms-auto text-secondary"></i>
+              </div>
+            </div>
+          </article>
+        </div>
+
+        <div class="col">
+          <article class="card border-0 rounded-4 shadow-sm h-100">
+            <img src="assets/course-laravel.jpg" class="card-img-top" alt="laravel">
+            <div class="card-body">
+              <h3 class="h6 fw-semibold">Laravel: Ultimate Beginner’s Guide</h3>
+
+              <div class="d-flex flex-wrap gap-3 text-secondary small mt-2">
+                <span><i class="bi bi-clock me-1"></i>1h 00m</span>
+                <span><i class="bi bi-bar-chart me-1"></i>Beginner</span>
+              </div>
+
+              <div class="d-flex align-items-center flex-wrap gap-2 mt-3">
+                <div class="stars" aria-label="4.5 su 5">
+                  <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-half"></i>
+                </div>
+                <span class="small text-secondary">4.5</span>
+                <span class="small text-secondary">(2,500)</span>
+              </div>
+
+              <div class="mt-3 small">
+                <span class="fw-bold">$170</span>
+                <del class="text-secondary ms-2">$220</del>
+              </div>
+            </div>
+
+            <div class="card-footer bg-white border-0 pt-0">
+              <div class="d-flex align-items-center gap-2">
+                <img src="assets/avatar-7.jpg" class="rounded-circle" width="30" height="30" alt="Sobo">
+                <span class="small">Sobo Rikhan</span>
+                <i class="bi bi-bookmark ms-auto text-secondary"></i>
+              </div>
+            </div>
+          </article>
+        </div>
+
+        <button class="arrow-btn arrow-left d-none d-md-inline-flex" type="button" aria-label="Prev"><i class="bi bi-chevron-left"></i></button>
+        <button class="arrow-btn arrow-right d-none d-md-inline-flex" type="button" aria-label="Next"><i class="bi bi-chevron-right"></i></button>
+      </div>
+
+
+      <!-- Most Popular -->
+
+      <h2 class="mb-4">Most Popular</h2>
+
+      <!-- MOBILE: Carousel -->
+      <div class="d-md-none mb-4">
+        <div id="popularCarousel" class="carousel slide" data-bs-ride="carousel">
+          <div class="carousel-inner">
+
+            <div class="carousel-item active">
+              <article class="card border-0 rounded-4 shadow-sm">
+                <img src="assets/course-html.jpg" class="card-img-top" alt="html">
+                <div class="card-body">
+                  <h3 class="h6 fw-semibold">HTML Full Course - Build a Website Tutorial</h3>
+                  <div class="d-flex flex-wrap gap-3 text-secondary small mt-2">
+                    <span><i class="bi bi-clock me-1"></i>3h 16m</span>
+                    <span><i class="bi bi-bar-chart me-1"></i>Advance</span>
+                  </div>
+                  <div class="d-flex align-items-center flex-wrap gap-2 mt-3">
+                    <div class="stars" aria-label="3.0 su 5">
+                      <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star"></i><i class="bi bi-star"></i>
+                    </div>
+                    <span class="small text-secondary">3.0</span>
+                    <span class="small text-secondary">(1,600)</span>
+                  </div>
+                  <div class="mt-3 small">
+                    <span class="fw-bold">$550</span>
+                    <del class="text-secondary ms-2">$750</del>
+                  </div>
+                </div>
+                <div class="card-footer bg-white border-0 pt-0">
+                  <div class="d-flex align-items-center gap-2">
+                    <img src="assets/avatar-8.jpg" class="rounded-circle" width="30" height="30" alt="Miston">
+                    <span class="small">Miston Wilson</span>
+                    <i class="bi bi-bookmark ms-auto text-secondary"></i>
+                  </div>
+                </div>
+              </article>
+            </div>
+
+            <div class="carousel-item">
+              <article class="card border-0 rounded-4 shadow-sm">
+                <img src="assets/course-javascript.jpg" class="card-img-top" alt="javascript">
+                <div class="card-body">
+                  <h3 class="h6 fw-semibold">A Complete Beginner’s Guide to JavaScript</h3>
+                  <div class="d-flex flex-wrap gap-3 text-secondary small mt-2">
+                    <span><i class="bi bi-clock me-1"></i>4h 10m</span>
+                    <span><i class="bi bi-bar-chart me-1"></i>Advance</span>
+                  </div>
+                  <div class="d-flex align-items-center flex-wrap gap-2 mt-3">
+                    <div class="stars" aria-label="3.5 su 5">
+                      <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-half"></i><i class="bi bi-star"></i>
+                    </div>
+                    <span class="small text-secondary">3.5</span>
+                    <span class="small text-secondary">(7,500)</span>
+                  </div>
+                  <div class="mt-3 small">
+                    <span class="fw-bold">$700</span>
+                    <del class="text-secondary ms-2">$850</del>
+                  </div>
+                </div>
+                <div class="card-footer bg-white border-0 pt-0">
+                  <div class="d-flex align-items-center gap-2">
+                    <img src="assets/avatar-1.jpg" class="rounded-circle" width="30" height="30" alt="Jenny">
+                    <span class="small">Jenny Wilson</span>
+                    <i class="bi bi-bookmark ms-auto text-secondary"></i>
+                  </div>
+                </div>
+              </article>
+            </div>
+
+            <div class="carousel-item">
+              <article class="card border-0 rounded-4 shadow-sm">
+                <img src="assets/course-node.jpg" class="card-img-top" alt="node">
+                <div class="card-body">
+                  <h3 class="h6 fw-semibold">Node.js: The Complete Guide</h3>
+                  <div class="d-flex flex-wrap gap-3 text-secondary small mt-2">
+                    <span><i class="bi bi-clock me-1"></i>2h 00m</span>
+                    <span><i class="bi bi-bar-chart me-1"></i>Intermediate</span>
+                  </div>
+                  <div class="d-flex align-items-center flex-wrap gap-2 mt-3">
+                    <div class="stars" aria-label="4.0 su 5">
+                      <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star"></i>
+                    </div>
+                    <span class="small text-secondary">4.0</span>
+                    <span class="small text-secondary">(15,700)</span>
+                  </div>
+                  <div class="mt-3 small">
+                    <span class="fw-bold">$800</span>
+                    <del class="text-secondary ms-2">$950</del>
+                  </div>
+                </div>
+                <div class="card-footer bg-white border-0 pt-0">
+                  <div class="d-flex align-items-center gap-2">
+                    <img src="assets/avatar-3.jpg" class="rounded-circle" width="30" height="30" alt="Sina">
+                    <span class="small">Sina Ray</span>
+                    <i class="bi bi-bookmark ms-auto text-secondary"></i>
+                  </div>
+                </div>
+              </article>
+            </div>
+
+            <div class="carousel-item">
+              <article class="card border-0 rounded-4 shadow-sm">
+                <img src="assets/course-react.jpg" class="card-img-top" alt="react">
+                <div class="card-body">
+                  <h3 class="h6 fw-semibold">How to easily create a website with React</h3>
+                  <div class="d-flex flex-wrap gap-3 text-secondary small mt-2">
+                    <span><i class="bi bi-clock me-1"></i>3h 55m</span>
+                    <span><i class="bi bi-bar-chart me-1"></i>Advance</span>
+                  </div>
+                  <div class="d-flex align-items-center flex-wrap gap-2 mt-3">
+                    <div class="stars" aria-label="4.5 su 5">
+                      <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-half"></i>
+                    </div>
+                    <span class="small text-secondary">4.5</span>
+                    <span class="small text-secondary">(1,500)</span>
+                  </div>
+                  <div class="mt-3 small">
+                    <span class="fw-bold">$600</span>
+                    <del class="text-secondary ms-2">$750</del>
+                  </div>
+                </div>
+                <div class="card-footer bg-white border-0 pt-0">
+                  <div class="d-flex align-items-center gap-2">
+                    <img src="assets/avatar-2.jpg" class="rounded-circle" width="30" height="30" alt="April">
+                    <span class="small">April Noms</span>
+                    <i class="bi bi-bookmark ms-auto text-secondary"></i>
+                  </div>
+                </div>
+              </article>
+            </div>
+
+          </div>
+
+          <button class="carousel-control-prev" type="button" data-bs-target="#popularCarousel" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#popularCarousel" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+      </div>
+
+      <!-- DESKTOP/TABLET: Grid -->
+      <div class="row d-none d-md-flex row-cols-md-3 row-cols-lg-4 g-4 mb-5 position-relative">
+        <div class="col">
+          <article class="card border-0 rounded-4 shadow-sm h-100">
+            <img src="assets/course-html.jpg" class="card-img-top" alt="html">
+            <div class="card-body">
+              <h3 class="h6 fw-semibold">HTML Full Course - Build a Website Tutorial</h3>
+              <div class="d-flex flex-wrap gap-3 text-secondary small mt-2">
+                <span><i class="bi bi-clock me-1"></i>3h 16m</span>
+                <span><i class="bi bi-bar-chart me-1"></i>Advance</span>
+              </div>
+              <div class="d-flex align-items-center flex-wrap gap-2 mt-3">
+                <div class="stars" aria-label="3.0 su 5">
+                  <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star"></i><i class="bi bi-star"></i>
+                </div>
+                <span class="small text-secondary">3.0</span>
+                <span class="small text-secondary">(1,600)</span>
+              </div>
+              <div class="mt-3 small">
+                <span class="fw-bold">$550</span>
+                <del class="text-secondary ms-2">$750</del>
+              </div>
+            </div>
+            <div class="card-footer bg-white border-0 pt-0">
+              <div class="d-flex align-items-center gap-2">
+                <img src="assets/avatar-8.jpg" class="rounded-circle" width="30" height="30" alt="Miston">
+                <span class="small">Miston Wilson</span>
+                <i class="bi bi-bookmark ms-auto text-secondary"></i>
+              </div>
+            </div>
+          </article>
+        </div>
+
+        <div class="col">
+          <article class="card border-0 rounded-4 shadow-sm h-100">
+            <img src="assets/course-javascript.jpg" class="card-img-top" alt="javascript">
+            <div class="card-body">
+              <h3 class="h6 fw-semibold">A Complete Beginner’s Guide to JavaScript</h3>
+              <div class="d-flex flex-wrap gap-3 text-secondary small mt-2">
+                <span><i class="bi bi-clock me-1"></i>4h 10m</span>
+                <span><i class="bi bi-bar-chart me-1"></i>Advance</span>
+              </div>
+              <div class="d-flex align-items-center flex-wrap gap-2 mt-3">
+                <div class="stars" aria-label="3.5 su 5">
+                  <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-half"></i><i class="bi bi-star"></i>
+                </div>
+                <span class="small text-secondary">3.5</span>
+                <span class="small text-secondary">(7,500)</span>
+              </div>
+              <div class="mt-3 small">
+                <span class="fw-bold">$700</span>
+                <del class="text-secondary ms-2">$850</del>
+              </div>
+            </div>
+            <div class="card-footer bg-white border-0 pt-0">
+              <div class="d-flex align-items-center gap-2">
+                <img src="assets/avatar-1.jpg" class="rounded-circle" width="30" height="30" alt="Jenny">
+                <span class="small">Jenny Wilson</span>
+                <i class="bi bi-bookmark ms-auto text-secondary"></i>
+              </div>
+            </div>
+          </article>
+        </div>
+
+        <div class="col">
+          <article class="card border-0 rounded-4 shadow-sm h-100">
+            <img src="assets/course-node.jpg" class="card-img-top" alt="node">
+            <div class="card-body">
+              <h3 class="h6 fw-semibold">Node.js: The Complete Guide</h3>
+              <div class="d-flex flex-wrap gap-3 text-secondary small mt-2">
+                <span><i class="bi bi-clock me-1"></i>2h 00m</span>
+                <span><i class="bi bi-bar-chart me-1"></i>Intermediate</span>
+              </div>
+              <div class="d-flex align-items-center flex-wrap gap-2 mt-3">
+                <div class="stars" aria-label="4.0 su 5">
+                  <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star"></i>
+                </div>
+                <span class="small text-secondary">4.0</span>
+                <span class="small text-secondary">(15,700)</span>
+              </div>
+              <div class="mt-3 small">
+                <span class="fw-bold">$800</span>
+                <del class="text-secondary ms-2">$950</del>
+              </div>
+            </div>
+            <div class="card-footer bg-white border-0 pt-0">
+              <div class="d-flex align-items-center gap-2">
+                <img src="assets/avatar-3.jpg" class="rounded-circle" width="30" height="30" alt="Sina">
+                <span class="small">Sina Ray</span>
+                <i class="bi bi-bookmark ms-auto text-secondary"></i>
+              </div>
+            </div>
+          </article>
+        </div>
+
+        <div class="col">
+          <article class="card border-0 rounded-4 shadow-sm h-100">
+            <img src="assets/course-react.jpg" class="card-img-top" alt="react">
+            <div class="card-body">
+              <h3 class="h6 fw-semibold">How to easily create a website with React</h3>
+              <div class="d-flex flex-wrap gap-3 text-secondary small mt-2">
+                <span><i class="bi bi-clock me-1"></i>3h 55m</span>
+                <span><i class="bi bi-bar-chart me-1"></i>Advance</span>
+              </div>
+              <div class="d-flex align-items-center flex-wrap gap-2 mt-3">
+                <div class="stars" aria-label="4.5 su 5">
+                  <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-half"></i>
+                </div>
+                <span class="small text-secondary">4.5</span>
+                <span class="small text-secondary">(1,500)</span>
+              </div>
+              <div class="mt-3 small">
+                <span class="fw-bold">$600</span>
+                <del class="text-secondary ms-2">$750</del>
+              </div>
+            </div>
+            <div class="card-footer bg-white border-0 pt-0">
+              <div class="d-flex align-items-center gap-2">
+                <img src="assets/avatar-2.jpg" class="rounded-circle" width="30" height="30" alt="April">
+                <span class="small">April Noms</span>
+                <i class="bi bi-bookmark ms-auto text-secondary"></i>
+              </div>
+            </div>
+          </article>
+        </div>
+
+        <button class="arrow-btn arrow-left d-none d-md-inline-flex" type="button" aria-label="Prev"><i class="bi bi-chevron-left"></i></button>
+        <button class="arrow-btn arrow-right d-none d-md-inline-flex" type="button" aria-label="Next"><i class="bi bi-chevron-right"></i></button>
+      </div>
+
+      <!-- Trending -->
+
+      <h2 class="mb-4">Trending</h2>
+
+      <!-- MOBILE: Carousel -->
+      <div class="d-md-none mb-4">
+        <div id="trendingCarousel" class="carousel slide" data-bs-ride="carousel">
+          <div class="carousel-inner">
+
+            <div class="carousel-item active">
+              <article class="card border-0 rounded-4 shadow-sm">
+                <img src="assets/course-gatsby.jpg" class="card-img-top" alt="gatsby">
+                <div class="card-body">
+                  <h3 class="h6 fw-semibold">Revolutionize how you build the web</h3>
+                  <div class="d-flex flex-wrap gap-3 text-secondary small mt-2">
+                    <span><i class="bi bi-clock me-1"></i>1h 46m</span>
+                    <span><i class="bi bi-bar-chart me-1"></i>Intermediate</span>
+                  </div>
+                  <div class="d-flex align-items-center flex-wrap gap-2 mt-3">
+                    <div class="stars" aria-label="2.0 su 5">
+                      <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star"></i><i class="bi bi-star"></i><i class="bi bi-star"></i>
+                    </div>
+                    <span class="small text-secondary">2.0</span>
+                    <span class="small text-secondary">(16,500)</span>
+                  </div>
+                  <div class="mt-3 small">
+                    <span class="fw-bold">$550</span>
+                    <del class="text-secondary ms-2">$750</del>
+                  </div>
+                </div>
+                <div class="card-footer bg-white border-0 pt-0">
+                  <div class="d-flex align-items-center gap-2">
+                    <img src="assets/avatar-6.jpg" class="rounded-circle" width="30" height="30" alt="Miston">
+                    <span class="small">Miston Wilson</span>
+                    <i class="bi bi-bookmark ms-auto text-secondary"></i>
+                  </div>
+                </div>
+              </article>
+            </div>
+
+            <div class="carousel-item">
+              <article class="card border-0 rounded-4 shadow-sm">
+                <img src="assets/course-html.jpg" class="card-img-top" alt="html">
+                <div class="card-body">
+                  <h3 class="h6 fw-semibold">HTML Full Course - Build a Website Tutorial</h3>
+                  <div class="d-flex flex-wrap gap-3 text-secondary small mt-2">
+                    <span><i class="bi bi-clock me-1"></i>3h 16m</span>
+                    <span><i class="bi bi-bar-chart me-1"></i>Advance</span>
+                  </div>
+                  <div class="d-flex align-items-center flex-wrap gap-2 mt-3">
+                    <div class="stars" aria-label="3.0 su 5">
+                      <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star"></i><i class="bi bi-star"></i>
+                    </div>
+                    <span class="small text-secondary">3.0</span>
+                    <span class="small text-secondary">(1,600)</span>
+                  </div>
+                  <div class="mt-3 small">
+                    <span class="fw-bold">$550</span>
+                    <del class="text-secondary ms-2">$750</del>
+                  </div>
+                </div>
+                <div class="card-footer bg-white border-0 pt-0">
+                  <div class="d-flex align-items-center gap-2">
+                    <img src="assets/avatar-8.jpg" class="rounded-circle" width="30" height="30" alt="Miston">
+                    <span class="small">Miston Wilson</span>
+                    <i class="bi bi-bookmark ms-auto text-secondary"></i>
+                  </div>
+                </div>
+              </article>
+            </div>
+
+            <div class="carousel-item">
+              <article class="card border-0 rounded-4 shadow-sm">
+                <img src="assets/course-node.jpg" class="card-img-top" alt="node">
+                <div class="card-body">
+                  <h3 class="h6 fw-semibold">Node.js: The Complete Guide</h3>
+                  <div class="d-flex flex-wrap gap-3 text-secondary small mt-2">
+                    <span><i class="bi bi-clock me-1"></i>2h 00m</span>
+                    <span><i class="bi bi-bar-chart me-1"></i>Intermediate</span>
+                  </div>
+                  <div class="d-flex align-items-center flex-wrap gap-2 mt-3">
+                    <div class="stars" aria-label="4.0 su 5">
+                      <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star"></i>
+                    </div>
+                    <span class="small text-secondary">4.0</span>
+                    <span class="small text-secondary">(15,700)</span>
+                  </div>
+                  <div class="mt-3 small">
+                    <span class="fw-bold">$800</span>
+                    <del class="text-secondary ms-2">$950</del>
+                  </div>
+                </div>
+                <div class="card-footer bg-white border-0 pt-0">
+                  <div class="d-flex align-items-center gap-2">
+                    <img src="assets/avatar-3.jpg" class="rounded-circle" width="30" height="30" alt="Sina">
+                    <span class="small">Sina Ray</span>
+                    <i class="bi bi-bookmark ms-auto text-secondary"></i>
+                  </div>
+                </div>
+              </article>
+            </div>
+
+            <div class="carousel-item">
+              <article class="card border-0 rounded-4 shadow-sm">
+                <img src="assets/course-laravel.jpg" class="card-img-top" alt="laravel">
+                <div class="card-body">
+                  <h3 class="h6 fw-semibold">Laravel: Ultimate Beginner’s Guide</h3>
+                  <div class="d-flex flex-wrap gap-3 text-secondary small mt-2">
+                    <span><i class="bi bi-clock me-1"></i>1h 00m</span>
+                    <span><i class="bi bi-bar-chart me-1"></i>Beginner</span>
+                  </div>
+                  <div class="d-flex align-items-center flex-wrap gap-2 mt-3">
+                    <div class="stars" aria-label="4.5 su 5">
+                      <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-half"></i>
+                    </div>
+                    <span class="small text-secondary">4.5</span>
+                    <span class="small text-secondary">(2,500)</span>
+                  </div>
+                  <div class="mt-3 small">
+                    <span class="fw-bold">$170</span>
+                    <del class="text-secondary ms-2">$220</del>
+                  </div>
+                </div>
+                <div class="card-footer bg-white border-0 pt-0">
+                  <div class="d-flex align-items-center gap-2">
+                    <img src="assets/avatar-7.jpg" class="rounded-circle" width="30" height="30" alt="Sobo">
+                    <span class="small">Sobo Rikhan</span>
+                    <i class="bi bi-bookmark ms-auto text-secondary"></i>
+                  </div>
+                </div>
+              </article>
+            </div>
+
+          </div>
+
+          <button class="carousel-control-prev" type="button" data-bs-target="#trendingCarousel" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#trendingCarousel" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+      </div>
+
+      <!-- DESKTOP/TABLET: Grid -->
+      <div class="row d-none d-md-flex row-cols-md-3 row-cols-lg-4 g-4 position-relative">
+
+        <div class="col">
+          <article class="card border-0 rounded-4 shadow-sm h-100">
+            <img src="assets/course-gatsby.jpg" class="card-img-top" alt="gatsby">
+            <div class="card-body">
+              <h3 class="h6 fw-semibold">Revolutionize how you build the web</h3>
+              <div class="d-flex flex-wrap gap-3 text-secondary small mt-2">
+                <span><i class="bi bi-clock me-1"></i>1h 46m</span>
+                <span><i class="bi bi-bar-chart me-1"></i>Intermediate</span>
+              </div>
+              <div class="d-flex align-items-center flex-wrap gap-2 mt-3">
+                <div class="stars" aria-label="2.0 su 5">
+                  <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star"></i><i class="bi bi-star"></i><i class="bi bi-star"></i>
+                </div>
+                <span class="small text-secondary">2.0</span>
+                <span class="small text-secondary">(16,500)</span>
+              </div>
+              <div class="mt-3 small">
+                <span class="fw-bold">$550</span>
+                <del class="text-secondary ms-2">$750</del>
+              </div>
+            </div>
+            <div class="card-footer bg-white border-0 pt-0">
+              <div class="d-flex align-items-center gap-2">
+                <img src="assets/avatar-6.jpg" class="rounded-circle" width="30" height="30" alt="Miston">
+                <span class="small">Miston Wilson</span>
+                <i class="bi bi-bookmark ms-auto text-secondary"></i>
+              </div>
+            </div>
+          </article>
+        </div>
+
+        <div class="col">
+          <article class="card border-0 rounded-4 shadow-sm h-100">
+            <img src="assets/course-html.jpg" class="card-img-top" alt="html">
+            <div class="card-body">
+              <h3 class="h6 fw-semibold">HTML Full Course - Build a Website Tutorial</h3>
+              <div class="d-flex flex-wrap gap-3 text-secondary small mt-2">
+                <span><i class="bi bi-clock me-1"></i>3h 16m</span>
+                <span><i class="bi bi-bar-chart me-1"></i>Advance</span>
+              </div>
+              <div class="d-flex align-items-center flex-wrap gap-2 mt-3">
+                <div class="stars" aria-label="3.0 su 5">
+                  <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star"></i><i class="bi bi-star"></i>
+                </div>
+                <span class="small text-secondary">3.0</span>
+                <span class="small text-secondary">(1,600)</span>
+              </div>
+              <div class="mt-3 small">
+                <span class="fw-bold">$550</span>
+                <del class="text-secondary ms-2">$750</del>
+              </div>
+            </div>
+            <div class="card-footer bg-white border-0 pt-0">
+              <div class="d-flex align-items-center gap-2">
+                <img src="assets/avatar-8.jpg" class="rounded-circle" width="30" height="30" alt="Miston">
+                <span class="small">Miston Wilson</span>
+                <i class="bi bi-bookmark ms-auto text-secondary"></i>
+              </div>
+            </div>
+          </article>
+        </div>
+
+        <div class="col">
+          <article class="card border-0 rounded-4 shadow-sm h-100">
+            <img src="assets/course-node.jpg" class="card-img-top" alt="node">
+            <div class="card-body">
+              <h3 class="h6 fw-semibold">Node.js: The Complete Guide</h3>
+              <div class="d-flex flex-wrap gap-3 text-secondary small mt-2">
+                <span><i class="bi bi-clock me-1"></i>2h 00m</span>
+                <span><i class="bi bi-bar-chart me-1"></i>Intermediate</span>
+              </div>
+              <div class="d-flex align-items-center flex-wrap gap-2 mt-3">
+                <div class="stars" aria-label="4.0 su 5">
+                  <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star"></i>
+                </div>
+                <span class="small text-secondary">4.0</span>
+                <span class="small text-secondary">(15,700)</span>
+              </div>
+              <div class="mt-3 small">
+                <span class="fw-bold">$800</span>
+                <del class="text-secondary ms-2">$950</del>
+              </div>
+            </div>
+            <div class="card-footer bg-white border-0 pt-0">
+              <div class="d-flex align-items-center gap-2">
+                <img src="assets/avatar-3.jpg" class="rounded-circle" width="30" height="30" alt="Sina">
+                <span class="small">Sina Ray</span>
+                <i class="bi bi-bookmark ms-auto text-secondary"></i>
+              </div>
+            </div>
+          </article>
+        </div>
+
+        <div class="col">
+          <article class="card border-0 rounded-4 shadow-sm h-100">
+            <img src="assets/course-laravel.jpg" class="card-img-top" alt="laravel">
+            <div class="card-body">
+              <h3 class="h6 fw-semibold">Laravel: Ultimate Beginner’s Guide</h3>
+              <div class="d-flex flex-wrap gap-3 text-secondary small mt-2">
+                <span><i class="bi bi-clock me-1"></i>1h 00m</span>
+                <span><i class="bi bi-bar-chart me-1"></i>Beginner</span>
+              </div>
+              <div class="d-flex align-items-center flex-wrap gap-2 mt-3">
+                <div class="stars" aria-label="4.5 su 5">
+                  <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-half"></i>
+                </div>
+                <span class="small text-secondary">4.5</span>
+                <span class="small text-secondary">(2,500)</span>
+              </div>
+              <div class="mt-3 small">
+                <span class="fw-bold">$170</span>
+                <del class="text-secondary ms-2">$220</del>
+              </div>
+            </div>
+            <div class="card-footer bg-white border-0 pt-0">
+              <div class="d-flex align-items-center gap-2">
+                <img src="assets/avatar-7.jpg" class="rounded-circle" width="30" height="30" alt="Sobo">
+                <span class="small">Sobo Rikhan</span>
+                <i class="bi bi-bookmark ms-auto text-secondary"></i>
+              </div>
+            </div>
+          </article>
+        </div>
+
+        <button class="arrow-btn arrow-left d-none d-md-inline-flex" type="button" aria-label="Prev"><i class="bi bi-chevron-left"></i></button>
+        <button class="arrow-btn arrow-right d-none d-md-inline-flex" type="button" aria-label="Next"><i class="bi bi-chevron-right"></i></button>
       </div>
 
     </div>
-  </div>
-</header>
+  </section>
 
-<!-- DETAILS SECTION  -->
-<section class="details bg-with py-3">
-  <div class="container">
-    <div class="row text-center text-md-start">
-      <div class="col-md-4 d-flex align-items-center mb-3 mb-md-0">
-        <div class="me-3 fs-3 text-primary">
-          <i class="bi bi-camera-video"></i>
-        </div>
-        <div>
-          <h6 class="mb-0 fw-semibold">30,000 online courses</h6>
-          <p class="mb-0 text-muted small">Enjoy a variety of fresh topics</p>
-        </div>
-      </div>
-      <div class="col-md-4 d-flex align-items-center mb-3 mb-md-0">
-        <div class="me-3 fs-3 text-primary">
-          <i class="bi bi-people"></i>
-        </div>
-        <div>
-          <h6 class="mb-0 fw-semibold">Expert instruction</h6>
-          <p class="mb-0 text-muted small">Find the right instructor for you</p>
-        </div>
-      </div>
-      <div class="col-md-4 d-flex align-items-center">
-        <div class="me-3 fs-3 text-primary">
-          <i class="bi bi-clock"></i>
-        </div>
-        <div>
-          <h6 class="mb-0 fw-semibold">Lifetime access</h6>
-          <p class="mb-0 text-muted small">Learn on your schedule</p>
-        </div>
-      </div>
+  <!-- FOOTER -->
+  <footer class="mt-5">
+    <div class="container px-5 px-xl-3">
+      <div class="row border-top py-3 align-items-center">
 
+        <div class="col-12 col-md-6 text-center text-md-start">
+          <span class="small text-secondary">© 2022 Geeks. All Rights Reserved.</span>
+        </div>
+
+        <div class="col-12 col-md-6">
+          <ul class="nav justify-content-center justify-content-md-end small">
+            <li class="nav-item">
+              <a class="nav-link px-2 text-secondary" href="#">Privacy</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link px-2 text-secondary" href="#">Terms</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link px-2 text-secondary" href="#">Feedbacks</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link px-2 text-secondary" href="#">Support</a>
+            </li>
+          </ul>
+        </div>
+
+      </div>
     </div>
-  </div>
-</section>
-
-<!-- ===== COURSES ===== -->
-<section class="py-5">
-  <div class="container px-5 px-xl-3">
-
-    <!-- ===== Recommended ===== -->
-    <h2 class="mb-4">Recommended to you</h2>
-    <div class="row row-cols-2 row-cols-md-3 row-cols-lg-4 g-4 mb-5 position-relative">
-
-      <!-- 1 -->
-      <div class="col">
-        <article class="card border-0 rounded-4 shadow-sm h-100">
-          <img src="assets/course-graphql.jpg" class="card-img-top" alt="graphql">
-          <div class="card-body">
-            <h3 class="h6 fw-semibold">GraphQL: introduction to graphQL for beginners</h3>
-
-            <div class="d-flex flex-wrap gap-3 text-secondary small mt-2">
-              <span><i class="bi bi-clock me-1"></i>2h 40m</span>
-              <span><i class="bi bi-bar-chart me-1"></i>Advance</span>
-            </div>
-
-            <div class="d-flex align-items-center flex-wrap gap-2 mt-3">
-              <div class="stars" aria-label="2.5 su 5">
-                <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-half"></i><i class="bi bi-star"></i><i class="bi bi-star"></i>
-              </div>
-              <span class="small text-secondary">2.5</span>
-              <span class="small text-secondary">(1,500)</span>
-            </div>
-
-            <div class="mt-3 small">
-              <span class="fw-bold">$500</span>
-              <del class="text-secondary ms-2">$600</del>
-            </div>
-          </div>
-
-          <div class="card-footer bg-white border-0 pt-0">
-            <div class="d-flex align-items-center gap-2">
-              <img src="assets/avatar-5.jpg" class="rounded-circle" width="30" height="30" alt="Brooklyn">
-              <span class="small">Brooklyn Simmons</span>
-              <i class="bi bi-bookmark ms-auto text-secondary"></i>
-            </div>
-          </div>
-        </article>
-      </div>
-
-      <!-- 2 -->
-      <div class="col">
-        <article class="card border-0 rounded-4 shadow-sm h-100">
-          <img src="assets/course-javascript.jpg" class="card-img-top" alt="javascript">
-          <div class="card-body">
-            <h3 class="h6 fw-semibold">A Complete Beginner’s Guide to JavaScript</h3>
-
-            <div class="d-flex flex-wrap gap-3 text-secondary small mt-2">
-              <span><i class="bi bi-clock me-1"></i>4h 10m</span>
-              <span><i class="bi bi-bar-chart me-1"></i>Advance</span>
-            </div>
-
-            <div class="d-flex align-items-center flex-wrap gap-2 mt-3">
-              <div class="stars" aria-label="3.5 su 5">
-                <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-half"></i><i class="bi bi-star"></i>
-              </div>
-              <span class="small text-secondary">3.5</span>
-              <span class="small text-secondary">(7,500)</span>
-            </div>
-
-            <div class="mt-3 small">
-              <span class="fw-bold">$700</span>
-              <del class="text-secondary ms-2">$850</del>
-            </div>
-          </div>
-
-          <div class="card-footer bg-white border-0 pt-0">
-            <div class="d-flex align-items-center gap-2">
-              <img src="assets/avatar-1.jpg" class="rounded-circle" width="30" height="30" alt="Jenny">
-              <span class="small">Jenny Wilson</span>
-              <i class="bi bi-bookmark ms-auto text-secondary"></i>
-            </div>
-          </div>
-        </article>
-      </div>
-
-      <!-- 3 (hide mobile) -->
-      <div class="col d-none d-md-block">
-        <article class="card border-0 rounded-4 shadow-sm h-100">
-          <img src="assets/course-node.jpg" class="card-img-top" alt="node">
-          <div class="card-body">
-            <h3 class="h6 fw-semibold">Node.js: The Complete Guide</h3>
-
-            <div class="d-flex flex-wrap gap-3 text-secondary small mt-2">
-              <span><i class="bi bi-clock me-1"></i>2h 00m</span>
-              <span><i class="bi bi-bar-chart me-1"></i>Intermediate</span>
-            </div>
-
-            <div class="d-flex align-items-center flex-wrap gap-2 mt-3">
-              <div class="stars" aria-label="4.0 su 5">
-                <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star"></i>
-              </div>
-              <span class="small text-secondary">4.0</span>
-              <span class="small text-secondary">(15,700)</span>
-            </div>
-
-            <div class="mt-3 small">
-              <span class="fw-bold">$800</span>
-              <del class="text-secondary ms-2">$950</del>
-            </div>
-          </div>
-
-          <div class="card-footer bg-white border-0 pt-0">
-            <div class="d-flex align-items-center gap-2">
-              <img src="assets/avatar-3.jpg" class="rounded-circle" width="30" height="30" alt="Sina">
-              <span class="small">Sina Ray</span>
-              <i class="bi bi-bookmark ms-auto text-secondary"></i>
-            </div>
-          </div>
-        </article>
-      </div>
-
-      <!-- 4 (hide until lg) -->
-      <div class="col d-none d-lg-block">
-        <article class="card border-0 rounded-4 shadow-sm h-100">
-          <img src="assets/course-laravel.jpg" class="card-img-top" alt="laravel">
-          <div class="card-body">
-            <h3 class="h6 fw-semibold">Laravel: Ultimate Beginner’s Guide</h3>
-
-            <div class="d-flex flex-wrap gap-3 text-secondary small mt-2">
-              <span><i class="bi bi-clock me-1"></i>1h 00m</span>
-              <span><i class="bi bi-bar-chart me-1"></i>Beginner</span>
-            </div>
-
-            <div class="d-flex align-items-center flex-wrap gap-2 mt-3">
-              <div class="stars" aria-label="4.5 su 5">
-                <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-half"></i>
-              </div>
-              <span class="small text-secondary">4.5</span>
-              <span class="small text-secondary">(2,500)</span>
-            </div>
-
-            <div class="mt-3 small">
-              <span class="fw-bold">$170</span>
-              <del class="text-secondary ms-2">$220</del>
-            </div>
-          </div>
-
-          <div class="card-footer bg-white border-0 pt-0">
-            <div class="d-flex align-items-center gap-2">
-              <img src="assets/avatar-7.jpg" class="rounded-circle" width="30" height="30" alt="Sobo">
-              <span class="small">Sobo Rikhan</span>
-              <i class="bi bi-bookmark ms-auto text-secondary"></i>
-            </div>
-          </div>
-        </article>
-      </div>
-
-      <button class="arrow-btn arrow-left" type="button" aria-label="Prev"><i class="bi bi-chevron-left"></i></button>
-      <button class="arrow-btn arrow-right" type="button" aria-label="Next"><i class="bi bi-chevron-right"></i></button>
-    </div>
-
-    <!-- ===== Most Popular ===== -->
-    <h2 class="mb-4">Most Popular</h2>
-    <div class="row row-cols-2 row-cols-md-3 row-cols-lg-4 g-4 mb-5 position-relative">
-
-      <div class="col">
-        <article class="card border-0 rounded-4 shadow-sm h-100">
-          <img src="assets/course-html.jpg" class="card-img-top" alt="html">
-          <div class="card-body">
-            <h3 class="h6 fw-semibold">HTML Full Course - Build a Website Tutorial</h3>
-            <div class="d-flex flex-wrap gap-3 text-secondary small mt-2">
-              <span><i class="bi bi-clock me-1"></i>3h 16m</span>
-              <span><i class="bi bi-bar-chart me-1"></i>Advance</span>
-            </div>
-            <div class="d-flex align-items-center flex-wrap gap-2 mt-3">
-              <div class="stars" aria-label="3.0 su 5">
-                <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star"></i><i class="bi bi-star"></i>
-              </div>
-              <span class="small text-secondary">3.0</span>
-              <span class="small text-secondary">(1,600)</span>
-            </div>
-            <div class="mt-3 small"><span class="fw-bold">$550</span><del class="text-secondary ms-2">$750</del></div>
-          </div>
-          <div class="card-footer bg-white border-0 pt-0">
-            <div class="d-flex align-items-center gap-2">
-              <img src="assets/avatar-8.jpg" class="rounded-circle" width="30" height="30" alt="Miston">
-              <span class="small">Miston Wilson</span>
-              <i class="bi bi-bookmark ms-auto text-secondary"></i>
-            </div>
-          </div>
-        </article>
-      </div>
-
-      <div class="col">
-        <article class="card border-0 rounded-4 shadow-sm h-100">
-          <img src="assets/course-javascript.jpg" class="card-img-top" alt="javascript">
-          <div class="card-body">
-            <h3 class="h6 fw-semibold">A Complete Beginner’s Guide to JavaScript</h3>
-            <div class="d-flex flex-wrap gap-3 text-secondary small mt-2">
-              <span><i class="bi bi-clock me-1"></i>4h 10m</span>
-              <span><i class="bi bi-bar-chart me-1"></i>Advance</span>
-            </div>
-            <div class="d-flex align-items-center flex-wrap gap-2 mt-3">
-              <div class="stars" aria-label="3.5 su 5">
-                <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-half"></i><i class="bi bi-star"></i>
-              </div>
-              <span class="small text-secondary">3.5</span>
-              <span class="small text-secondary">(7,500)</span>
-            </div>
-            <div class="mt-3 small"><span class="fw-bold">$700</span><del class="text-secondary ms-2">$850</del></div>
-          </div>
-          <div class="card-footer bg-white border-0 pt-0">
-            <div class="d-flex align-items-center gap-2">
-              <img src="assets/avatar-1.jpg" class="rounded-circle" width="30" height="30" alt="Jenny">
-              <span class="small">Jenny Wilson</span>
-              <i class="bi bi-bookmark ms-auto text-secondary"></i>
-            </div>
-          </div>
-        </article>
-      </div>
-
-      <div class="col d-none d-md-block">
-        <article class="card border-0 rounded-4 shadow-sm h-100">
-          <img src="assets/course-node.jpg" class="card-img-top" alt="node">
-          <div class="card-body">
-            <h3 class="h6 fw-semibold">Node.js: The Complete Guide</h3>
-            <div class="d-flex flex-wrap gap-3 text-secondary small mt-2">
-              <span><i class="bi bi-clock me-1"></i>2h 00m</span>
-              <span><i class="bi bi-bar-chart me-1"></i>Intermediate</span>
-            </div>
-            <div class="d-flex align-items-center flex-wrap gap-2 mt-3">
-              <div class="stars" aria-label="4.0 su 5">
-                <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star"></i>
-              </div>
-              <span class="small text-secondary">4.0</span>
-              <span class="small text-secondary">(15,700)</span>
-            </div>
-            <div class="mt-3 small"><span class="fw-bold">$800</span><del class="text-secondary ms-2">$950</del></div>
-          </div>
-          <div class="card-footer bg-white border-0 pt-0">
-            <div class="d-flex align-items-center gap-2">
-              <img src="assets/avatar-3.jpg" class="rounded-circle" width="30" height="30" alt="Sina">
-              <span class="small">Sina Ray</span>
-              <i class="bi bi-bookmark ms-auto text-secondary"></i>
-            </div>
-          </div>
-        </article>
-      </div>
-
-      <div class="col d-none d-lg-block">
-        <article class="card border-0 rounded-4 shadow-sm h-100">
-          <img src="assets/course-react.jpg" class="card-img-top" alt="react">
-          <div class="card-body">
-            <h3 class="h6 fw-semibold">How to easily create a website with React</h3>
-            <div class="d-flex flex-wrap gap-3 text-secondary small mt-2">
-              <span><i class="bi bi-clock me-1"></i>3h 55m</span>
-              <span><i class="bi bi-bar-chart me-1"></i>Advance</span>
-            </div>
-            <div class="d-flex align-items-center flex-wrap gap-2 mt-3">
-              <div class="stars" aria-label="4.5 su 5">
-                <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-half"></i>
-              </div>
-              <span class="small text-secondary">4.5</span>
-              <span class="small text-secondary">(1,500)</span>
-            </div>
-            <div class="mt-3 small"><span class="fw-bold">$600</span><del class="text-secondary ms-2">$750</del></div>
-          </div>
-          <div class="card-footer bg-white border-0 pt-0">
-            <div class="d-flex align-items-center gap-2">
-              <img src="assets/avatar-2.jpg" class="rounded-circle" width="30" height="30" alt="April">
-              <span class="small">April Noms</span>
-              <i class="bi bi-bookmark ms-auto text-secondary"></i>
-            </div>
-          </div>
-        </article>
-      </div>
-
-      <button class="arrow-btn arrow-left" type="button" aria-label="Prev"><i class="bi bi-chevron-left"></i></button>
-      <button class="arrow-btn arrow-right" type="button" aria-label="Next"><i class="bi bi-chevron-right"></i></button>
-    </div>
-
-    <!-- ===== Trending ===== -->
-    <h2 class="mb-4">Trending</h2>
-    <div class="row row-cols-2 row-cols-md-3 row-cols-lg-4 g-4 position-relative">
-
-      <div class="col">
-        <article class="card border-0 rounded-4 shadow-sm h-100">
-          <img src="assets/course-gatsby.jpg" class="card-img-top" alt="gatsby">
-          <div class="card-body">
-            <h3 class="h6 fw-semibold">Revolutionize how you build the web</h3>
-            <div class="d-flex flex-wrap gap-3 text-secondary small mt-2">
-              <span><i class="bi bi-clock me-1"></i>1h 46m</span>
-              <span><i class="bi bi-bar-chart me-1"></i>Intermediate</span>
-            </div>
-            <div class="d-flex align-items-center flex-wrap gap-2 mt-3">
-              <div class="stars" aria-label="2.0 su 5">
-                <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star"></i><i class="bi bi-star"></i><i class="bi bi-star"></i>
-              </div>
-              <span class="small text-secondary">2.0</span>
-              <span class="small text-secondary">(16,500)</span>
-            </div>
-            <div class="mt-3 small"><span class="fw-bold">$550</span><del class="text-secondary ms-2">$750</del></div>
-          </div>
-          <div class="card-footer bg-white border-0 pt-0">
-            <div class="d-flex align-items-center gap-2">
-              <img src="assets/avatar-6.jpg" class="rounded-circle" width="30" height="30" alt="Miston">
-              <span class="small">Miston Wilson</span>
-              <i class="bi bi-bookmark ms-auto text-secondary"></i>
-            </div>
-          </div>
-        </article>
-      </div>
-
-      <div class="col">
-        <article class="card border-0 rounded-4 shadow-sm h-100">
-          <img src="assets/course-html.jpg" class="card-img-top" alt="html">
-          <div class="card-body">
-            <h3 class="h6 fw-semibold">HTML Full Course - Build a Website Tutorial</h3>
-            <div class="d-flex flex-wrap gap-3 text-secondary small mt-2">
-              <span><i class="bi bi-clock me-1"></i>3h 16m</span>
-              <span><i class="bi bi-bar-chart me-1"></i>Advance</span>
-            </div>
-            <div class="d-flex align-items-center flex-wrap gap-2 mt-3">
-              <div class="stars" aria-label="3.0 su 5">
-                <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star"></i><i class="bi bi-star"></i>
-              </div>
-              <span class="small text-secondary">3.0</span>
-              <span class="small text-secondary">(1,600)</span>
-            </div>
-            <div class="mt-3 small"><span class="fw-bold">$550</span><del class="text-secondary ms-2">$750</del></div>
-          </div>
-          <div class="card-footer bg-white border-0 pt-0">
-            <div class="d-flex align-items-center gap-2">
-              <img src="assets/avatar-8.jpg" class="rounded-circle" width="30" height="30" alt="Miston">
-              <span class="small">Miston Wilson</span>
-              <i class="bi bi-bookmark ms-auto text-secondary"></i>
-            </div>
-          </div>
-        </article>
-      </div>
-
-      <div class="col d-none d-md-block">
-        <article class="card border-0 rounded-4 shadow-sm h-100">
-          <img src="assets/course-node.jpg" class="card-img-top" alt="node">
-          <div class="card-body">
-            <h3 class="h6 fw-semibold">Node.js: The Complete Guide</h3>
-            <div class="d-flex flex-wrap gap-3 text-secondary small mt-2">
-              <span><i class="bi bi-clock me-1"></i>2h 00m</span>
-              <span><i class="bi bi-bar-chart me-1"></i>Intermediate</span>
-            </div>
-            <div class="d-flex align-items-center flex-wrap gap-2 mt-3">
-              <div class="stars" aria-label="4.0 su 5">
-                <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star"></i>
-              </div>
-              <span class="small text-secondary">4.0</span>
-              <span class="small text-secondary">(15,700)</span>
-            </div>
-            <div class="mt-3 small"><span class="fw-bold">$800</span><del class="text-secondary ms-2">$950</del></div>
-          </div>
-          <div class="card-footer bg-white border-0 pt-0">
-            <div class="d-flex align-items-center gap-2">
-              <img src="assets/avatar-3.jpg" class="rounded-circle" width="30" height="30" alt="Sina">
-              <span class="small">Sina Ray</span>
-              <i class="bi bi-bookmark ms-auto text-secondary"></i>
-            </div>
-          </div>
-        </article>
-      </div>
-
-      <div class="col d-none d-lg-block">
-        <article class="card border-0 rounded-4 shadow-sm h-100">
-          <img src="assets/course-laravel.jpg" class="card-img-top" alt="laravel">
-          <div class="card-body">
-            <h3 class="h6 fw-semibold">Laravel: Ultimate Beginner’s Guide</h3>
-            <div class="d-flex flex-wrap gap-3 text-secondary small mt-2">
-              <span><i class="bi bi-clock me-1"></i>1h 00m</span>
-              <span><i class="bi bi-bar-chart me-1"></i>Beginner</span>
-            </div>
-            <div class="d-flex align-items-center flex-wrap gap-2 mt-3">
-              <div class="stars" aria-label="4.5 su 5">
-                <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-half"></i>
-              </div>
-              <span class="small text-secondary">4.5</span>
-              <span class="small text-secondary">(2,500)</span>
-            </div>
-            <div class="mt-3 small"><span class="fw-bold">$170</span><del class="text-secondary ms-2">$220</del></div>
-          </div>
-          <div class="card-footer bg-white border-0 pt-0">
-            <div class="d-flex align-items-center gap-2">
-              <img src="assets/avatar-7.jpg" class="rounded-circle" width="30" height="30" alt="Sobo">
-              <span class="small">Sobo Rikhan</span>
-              <i class="bi bi-bookmark ms-auto text-secondary"></i>
-            </div>
-          </div>
-        </article>
-      </div>
-
-      <button class="arrow-btn arrow-left" type="button" aria-label="Prev"><i class="bi bi-chevron-left"></i></button>
-      <button class="arrow-btn arrow-right" type="button" aria-label="Next"><i class="bi bi-chevron-right"></i></button>
-    </div>
-
-  </div>
-</section>
-
-<!-- FOOTER -->
-<footer class="mt-5">
-  <div class="container px-5 px-xl-3">
-    <div class="row border-top py-3 align-items-center">
-
-      <div class="col-12 col-md-6 text-center text-md-start">
-        <span class="small text-secondary">© 2022 Geeks. All Rights Reserved.</span>
-      </div>
-
-      <div class="col-12 col-md-6">
-        <ul class="nav justify-content-center justify-content-md-end small">
-          <li class="nav-item">
-            <a class="nav-link px-2 text-secondary" href="#">Privacy</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link px-2 text-secondary" href="#">Terms</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link px-2 text-secondary" href="#">Feedbacks</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link px-2 text-secondary" href="#">Support</a>
-          </li>
-        </ul>
-      </div>
-
-    </div>
-  </div>
-</footer>
+  </footer>
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
           integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
